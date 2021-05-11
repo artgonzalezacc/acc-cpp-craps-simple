@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.8)
 
 project("cosc 1337 final exam")
 include_directories(inc)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -Wall")
 
 MACRO(SUBDIRLIST result curdir)
   FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
